@@ -19,6 +19,7 @@ This is my personal CV/portfolio website. But not the boring kind. The kind that
 
 I'm **Shima Fallah** — a Python/Django developer with 5+ years of experience, a B.Sc. in Food Science (plot twist), a competitive chess player, and somehow ranked **Top 10 Python Creator globally** on LinkedIn out of 1,000,000+ creators.
 
+Currently looking for a Master's in CS/Data Science. Accepting offers from universities brave enough.
 
 ## Tech Stack (of this website)
 
@@ -42,7 +43,7 @@ I'm **Shima Fallah** — a Python/Django developer with 5+ years of experience, 
 
 ```bash
 # Clone it
-git clone https://github.com/shimafallah/portfolio.git
+git clone https://github.com/shimafallah/funny-cv.git
 
 # Open it
 # That's it. It's one HTML file. Just open index.html in your browser.
