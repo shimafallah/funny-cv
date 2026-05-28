@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shima Fallah | From Food to Code 🐍♟️🍕</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Comic+Neue:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e0e0e0;overflow-x:hidden;cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="26" font-size="24">⌨️</text></svg>') 4 4,auto}
+a{cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="26" font-size="24">👆</text></svg>') 4 4,pointer}
+.matrix-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;opacity:.04}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem;background:radial-gradient(ellipse at center,#1a1a2e 0%,#0a0a0a 70%)}
+.glitch{font-family:'Press Start 2P',monospace;font-size:clamp(1.2rem,4.5vw,3rem);color:#00ff88;animation:glitch 3s infinite}
+@keyframes glitch{0%,90%,100%{text-shadow:none}92%{text-shadow:-2px 0 #ff0080,2px 0 #00ffff}94%{text-shadow:2px 0 #ff0080,-2px 0 #00ffff}96%{text-shadow:-1px 0 #ff0080,1px 0 #00ffff}}
+.subtitle{font-family:'Comic Neue',cursive;font-size:1.3rem;margin-top:1rem;color:#aaa}
+.badges{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:1.5rem}
+.badge{background:#1a1a2e;border:1px solid #00ff88;padding:.4rem .8rem;border-radius:20px;font-size:.85rem;transition:all .3s}
+.badge:hover{background:#00ff88;color:#0a0a0a;transform:scale(1.1) rotate(-2deg)}
+.hero-quote{font-style:italic;margin-top:1.5rem;color:#888;font-size:1.1rem;}
+.hero-quote em{color:#00ff88}
+.contact-bar{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center}
+.contact-bar a{color:#aaa;text-decoration:none;font-size:.95rem;transition:color .3s}
+.contact-bar a:hover{color:#00ff88}
+.scroll-hint{position:absolute;bottom:2rem;animation:bounce 2s infinite;cursor:pointer;color:#555}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+</style>
+</head>
+<body>
+<canvas id="matrix" class="matrix-bg"></canvas>
+<header class="hero">
+<div class="hero-content">
+<h1 class="glitch" data-text="SHIMA FALLAH">SHIMA FALLAH</h1>
+<p class="subtitle">Software Engineer &bull; Ex-Food Scientist &bull; Chess Menace</p>
+<div class="badges">
+<span class="badge">🐍 Python Whisperer</span>
+<span class="badge">🍕 Spaghetti Code Chef</span>
+<span class="badge">♟️ Checkmate IRL</span>
+<span class="badge">🏆 Top 10 Global Creator</span>
+<span class="badge">📦 PyPI Package Author</span>
+</div>
+<blockquote class="hero-quote">"I went from engineering food to engineering backends.<br>Both involve handling a lot of <em>spaghetti</em>."</blockquote>
+
+<div class="social-links">
+<a href="https://github.com/shimafallah" target="_blank" class="social-link">🐙 GitHub</a>
+<a href="https://www.linkedin.com/in/shimafallah" target="_blank" class="social-link">💼 LinkedIn</a>
+<a href="https://medium.com/@shimafallah" target="_blank" class="social-link">✍️ Medium</a>
+<a href="mailto:fshima02@gmail.com" class="social-link">📧 Email</a>
+<a href="https://t.me/shimaaa111" target="_blank" class="social-link">✈️ Telegram</a>
+</div>
+</div>
+<div class="scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">⬇️ Scroll to witness greatness ⬇️</div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section">
+<h2 class="section-title">🧬 Origin Story</h2>
+<div class="origin-story">
+<div class="timeline-funny">
+<div class="origin-item">
+<span class="origin-emoji">🍔</span>
+<p><strong>2014-2018:</strong> Studies Food Science. Learns that food processing is basically just chemistry with snacks.</p>
+</div>
+<div class="origin-item">
+<span class="origin-emoji">💡</span>
+<p><strong>2019:</strong> Realizes Python is more fun than pasteurization. Discovers that data analysis on food quality reports is just... Data Science? Makes the switch.</p>
+</div>
+<div class="origin-item">
+<span class="origin-emoji">🐍</span>
+<p><strong>2020-Present:</strong> Becomes a Django wizard &amp; Data Science enthusiast. Databases fear her. APIs respect her. Pandas DataFrames bow to her. Machine Learning models ask for her approval.</p>
+</div>
+<div class="origin-item">
+<span class="origin-emoji">📊</span>
+<p><strong>Ongoing:</strong> Bridges backend engineering with data science. Turns raw data into insights, and insights into production-ready systems. CS degree? Loading...</p>
+</div>
+<div class="origin-item">
+<span class="origin-emoji">♟️</span>
+<p><strong>Always:</strong> Plays chess competitively. Applies opening theory to code architecture. (Sicilian Defense == Microservices)</p>
+</div>
+<div class="origin-item">
+<span class="origin-emoji">🏆</span>
+<p><strong>2024:</strong> <a href="https://www.linkedin.com/posts/jeremyboissinot_social-media-pulse-february-2026-activity-7427327847305904129-Wabx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8w-L0B4-_FdIssXjtHGwJ4cqC11R1MpUo" target="_blank" class="inline-link">Ranked Top 10 Python Creator GLOBALLY</a> on LinkedIn by Favikon. Out of 1 MILLION+ creators. No big deal. 💅</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section class="section dark-section">
+<h2 class="section-title">💼 Battle Log (Experience)</h2>
+<div class="exp-grid">
+
+<div class="exp-card">
+<div class="exp-header">
+<span class="exp-role">🧙‍♀️ Freelance Python/Django Sorceress</span>
+<span class="exp-date">Apr 2024 - Present</span>
+</div>
+<p class="exp-company">Self Employed | Gorgan, Iran</p>
+<ul class="exp-list">
+<li>Built web apps so fast, clients thought I was a team of 5</li>
+<li>Designed PostgreSQL schemas that would make a DBA weep tears of joy</li>
+<li>Celery tasks running smoother than my morning coffee routine</li>
+<li>Integrated more third-party APIs than I have friends (that's a lot, I'm very popular)</li>
+</ul>
+</div>
+
+<div class="exp-card">
+<div class="exp-header">
+<span class="exp-role">🛡️ Backend Guardian</span>
+<span class="exp-date">Jan 2024 - Apr 2024</span>
+</div>
+<p class="exp-company"><a href="https://parswebserver.com/" target="_blank" class="company-link">ParsWebServer</a> | Amol, Iran</p>
+<ul class="exp-list">
+<li>Containerized apps with Docker like putting food in Tupperware (food science finally useful!)</li>
+<li>Made servers so secure, even I couldn't hack them</li>
+<li>Automated tasks so hard the servers got bored</li>
+<li>DevOps team said "she's one of us now" 🥲</li>
+</ul>
+</div>
+
+<div class="exp-card">
+<div class="exp-header">
+<span class="exp-role">⚔️ Lead Backend Warrior</span>
+<span class="exp-date">May 2022 - Nov 2023</span>
+</div>
+<p class="exp-company"><a href="https://www.linkedin.com/in/camooda-camooda-176a9a222/" target="_blank" class="company-link">Camooda</a> | Amol, Iran</p>
+<ul class="exp-list">
+<li>Led backend development like a chess grandmaster leads pawns to promotion</li>
+<li>Wrote middleware so secure, hackers sent thank-you notes for the challenge</li>
+<li>Optimized queries until the database said "please, I can only go so fast"</li>
+<li>Git commits so clean you could eat off them</li>
+</ul>
+</div>
+
+<div class="exp-card">
+<div class="exp-header">
+<span class="exp-role">👩‍🏫 Python Sensei</span>
+<span class="exp-date">Aug 2022 - Oct 2022</span>
+</div>
+<p class="exp-company">Private Tutoring | Amol, Iran</p>
+<ul class="exp-list">
+<li>Taught Python to CS students who thought "for loop" was a type of cereal</li>
+<li>Made Data Structures sound less scary than they are (they're still scary)</li>
+<li>Students went from "what's OOP?" to building actual things. Proud mom energy.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="section">
+<h2 class="section-title">🎮 Skill Tree (Fully Maxed)</h2>
+<div class="skills-container">
+
+<div class="skill-category">
+<h3>⚔️ Primary Weapons</h3>
+<div class="skill-bars">
+<div class="skill-item"><span>Python</span><div class="bar"><div class="fill" style="width:99%"></div></div><span class="skill-note">basically my first language (after Persian)</span></div>
+<div class="skill-item"><span>Django</span><div class="bar"><div class="fill" style="width:95%"></div></div><span class="skill-note">we're in a committed relationship</span></div>
+<div class="skill-item"><span>Django REST Framework</span><div class="bar"><div class="fill" style="width:93%"></div></div><span class="skill-note">API go brrr</span></div>
+<div class="skill-item"><span>Go</span><div class="bar"><div class="fill" style="width:45%"></div></div><span class="skill-note">built a file encryptor in it because Python wasn't enough drama</span></div>
+<div class="skill-item"><span>SQL</span><div class="bar"><div class="fill" style="width:90%"></div></div><span class="skill-note">SELECT * FROM my_heart WHERE passion = true</span></div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>🗄️ Database Mastery</h3>
+<div class="skill-bars">
+<div class="skill-item"><span>PostgreSQL</span><div class="bar"><div class="fill" style="width:92%"></div></div><span class="skill-note">my ride or die database</span></div>
+<div class="skill-item"><span>Oracle</span><div class="bar"><div class="fill" style="width:78%"></div></div><span class="skill-note">enterprise-grade drama queen</span></div>
+<div class="skill-item"><span>Database Design</span><div class="bar"><div class="fill" style="width:90%"></div></div><span class="skill-note">normalization is my love language</span></div>
+<div class="skill-item"><span>Query Optimization</span><div class="bar"><div class="fill" style="width:87%"></div></div><span class="skill-note">making slow queries cry for mercy</span></div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>🛡️ DevOps & Infrastructure</h3>
+<div class="skill-bars">
+<div class="skill-item"><span>Docker</span><div class="bar"><div class="fill" style="width:88%"></div></div><span class="skill-note">containerizing my emotions</span></div>
+<div class="skill-item"><span>Linux (Ubuntu)</span><div class="bar"><div class="fill" style="width:85%"></div></div><span class="skill-note">btw I use Ubuntu</span></div>
+<div class="skill-item"><span>Nginx</span><div class="bar"><div class="fill" style="width:82%"></div></div><span class="skill-note">reverse proxy? more like reverse psychology on traffic</span></div>
+<div class="skill-item"><span>Gunicorn</span><div class="bar"><div class="fill" style="width:83%"></div></div><span class="skill-note">the unicorn that actually works</span></div>
+<div class="skill-item"><span>Git</span><div class="bar"><div class="fill" style="width:90%"></div></div><span class="skill-note">git commit -m "fixed everything again"</span></div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>⚡ Async & Real-time</h3>
+<div class="skill-bars">
+<div class="skill-item"><span>Celery</span><div class="bar"><div class="fill" style="width:88%"></div></div><span class="skill-note">async like my sleep schedule</span></div>
+<div class="skill-item"><span>WebSockets</span><div class="bar"><div class="fill" style="width:82%"></div></div><span class="skill-note">real-time like my anxiety</span></div>
+<div class="skill-item"><span>RESTful APIs</span><div class="bar"><div class="fill" style="width:95%"></div></div><span class="skill-note">REST in peace, bad API design</span></div>
+<div class="skill-item"><span>Django Signals</span><div class="bar"><div class="fill" style="width:80%"></div></div><span class="skill-note">event-driven like my coffee addiction</span></div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>📊 Data Science & Analytics</h3>
+<div class="skill-bars">
+<div class="skill-item"><span>Pandas</span><div class="bar"><div class="fill" style="width:85%"></div></div><span class="skill-note">not the animal, sadly</span></div>
+<div class="skill-item"><span>NumPy</span><div class="bar"><div class="fill" style="width:80%"></div></div><span class="skill-note">numbers go zoom</span></div>
+<div class="skill-item"><span>Data Visualization</span><div class="bar"><div class="fill" style="width:78%"></div></div><span class="skill-note">making charts that even managers understand</span></div>
+<div class="skill-item"><span>Statistics</span><div class="bar"><div class="fill" style="width:75%"></div></div><span class="skill-note">p-value < 0.05 or it didn't happen</span></div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>🧮 Math & Theory</h3>
+<div class="skill-bars">
+<div class="skill-item"><span>Linear Algebra</span><div class="bar"><div class="fill" style="width:78%"></div></div><span class="skill-note">matrices are just spicy spreadsheets</span></div>
+<div class="skill-item"><span>Calculus</span><div class="bar"><div class="fill" style="width:72%"></div></div><span class="skill-note">derivatives of my career trajectory: always positive</span></div>
+<div class="skill-item"><span>Engineering Mathematics</span><div class="bar"><div class="fill" style="width:76%"></div></div><span class="skill-note">food science math hits different</span></div>
+<div class="skill-item"><span>Algorithms & DSA</span><div class="bar"><div class="fill" style="width:80%"></div></div><span class="skill-note">chess taught me to think in algorithms</span></div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>🗣️ Languages (Human Ones)</h3>
+<div class="skill-bars">
+<div class="skill-item"><span>Persian</span><div class="bar"><div class="fill" style="width:100%"></div></div><span class="skill-note">native - can trash talk in Farsi fluently</span></div>
+<div class="skill-item"><span>English</span><div class="bar"><div class="fill" style="width:80%"></div></div><span class="skill-note">professional - IELTS loading...</span></div>
+<div class="skill-item"><span>German</span><div class="bar"><div class="fill" style="width:15%"></div></div><span class="skill-note">Ich bin ein... programmer?</span></div>
+<div class="skill-item"><span>Python</span><div class="bar"><div class="fill" style="width:99%"></div></div><span class="skill-note">wait, this counts as a language right?</span></div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="section dark-section">
+<h2 class="section-title">🚀 Boss Fights (Projects)</h2>
+<p class="section-subtitle">8 major projects. Multiple countries. Open-source packages. One developer. Let that sink in.</p>
+<div class="projects-showcase">
+
+<div class="project-card featured">
+<div class="project-number">01</div>
+<div class="project-body">
+<div class="project-header">
+<h3><a href="https://ziqual.com/" target="_blank" class="project-link">🇺🇸 Ziqual</a></h3>
+<span class="project-tag">USA (Remote)</span>
+<span class="project-status live">● LIVE</span>
+</div>
+<p class="project-desc">Multi-role Service Management Platform</p>
+<p class="project-funny">"Built RBAC for 5 user types. It's like chess - everyone has different moves but I control the board."</p>
+<div class="project-tech">DRF • Docker • Celery • Stripe • Pandas</div>
+<ul><li>Automated tasks reducing manual work by 40%</li><li>Stripe integration for cross-border payments 💰</li><li>Analytics dashboard with Pandas & Matplotlib</li></ul>
+<span class="project-period">Nov 2024 - Present</span>
+</div>
+</div>
+
+<div class="project-card featured">
+<div class="project-number">02</div>
+<div class="project-body">
+<div class="project-header">
+<h3><a href="https://www.yodeck.com/" target="_blank" class="project-link">🇩🇪 Digital Signage Ecosystem</a></h3>
+<span class="project-tag">Germany (Remote)</span>
+<span class="project-status live">● LIVE</span>
+</div>
+<p class="project-desc">Real-time Display Synchronization for Retail</p>
+<p class="project-funny">"Making giant screens update in real-time. It's like being a DJ but for pixels."</p>
+<div class="project-tech">Django • WebSockets • Nginx • Linux</div>
+<ul><li>WebSocket magic for real-time cloud-to-hardware sync</li><li>Async data pipeline for low-latency content updates</li><li>99.9% uptime (the 0.1% was a coffee break)</li></ul>
+<span class="project-period">Dec 2025 - Present</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-number">03</div>
+<div class="project-body">
+<div class="project-header">
+<h3><a href="https://whopays.me" target="_blank" class="project-link">💳 WhoPays</a></h3>
+<span class="project-tag">Iran</span>
+<span class="project-status live">● LIVE</span>
+</div>
+<p class="project-desc">Centralized Payment & Site Management</p>
+<p class="project-funny">"Finally answered the eternal question: Who pays? (Spoiler: the API handles it now)"</p>
+<div class="project-tech">DRF • Pandas • Data Analysis • SQL</div>
+<ul><li>30% smoother transactions (butter-level smooth)</li><li>Real-time charts that make accountants happy</li><li>Built entire backend from scratch. Alone. Like a boss.</li></ul>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-number">04</div>
+<div class="project-body">
+<div class="project-header">
+<h3><a href="https://runflare.com" target="_blank" class="project-link">☁️ RunFlare</a></h3>
+<span class="project-tag">Iran</span>
+<span class="project-status live">● LIVE</span>
+</div>
+<p class="project-desc">Cloud Infrastructure & Server Management (PaaS)</p>
+<p class="project-funny">"Managing clouds. Not the fluffy kind. The expensive kind."</p>
+<div class="project-tech">DRF • Gunicorn • Nginx • Docker • Django Signals</div>
+<ul><li>Django Signals for async event handling</li><li>Survived high-traffic PaaS environment</li><li>Dockerized everything that moved</li></ul>
+<span class="project-period">Jan 2024 - Apr 2024</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-number">05</div>
+<div class="project-body">
+<div class="project-header">
+<h3><a href="https://fitnessbarbie.ir" target="_blank" class="project-link">💪 Fitness Barbie</a></h3>
+<span class="project-tag">Iran</span>
+<span class="project-status live">● LIVE</span>
+</div>
+<p class="project-desc">Data-Driven Health Platform</p>
+<p class="project-funny">"Tracking 9 health metrics. My food science degree is FINALLY relevant."</p>
+<div class="project-tech">Pandas • NumPy • PostgreSQL • Docker • DRF</div>
+<ul><li>Biometric tracking with actual data science</li><li>Dual portals for trainers & trainees</li><li>Where food science meets tech (my multiverse)</li></ul>
+<span class="project-period">Nov 2022 - Nov 2023</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-number">06</div>
+<div class="project-body">
+<div class="project-header">
+<h3><a href="http://fzaco.com" target="_blank" class="project-link">🏭 FZACO</a></h3>
+<span class="project-tag">Iran</span>
+<span class="project-status live">● LIVE</span>
+</div>
+<p class="project-desc">Industrial Enterprise Platform (Steel Company)</p>
+<p class="project-funny">"Built a platform for a STEEL COMPANY. I'm basically Iron Man now."</p>
+<div class="project-tech">DRF • Oracle • Docker • I18n</div>
+<ul><li>3 languages supported (more than I speak)</li><li>Oracle DB for enterprise-grade reliability</li><li>Deployed on-site in a protected industrial network 🔒</li></ul>
+<span class="project-period">Jun 2022 - Jan 2023</span>
+</div>
+</div>
+
+<div class="project-card featured">
+<div class="project-number">07</div>
+<div class="project-body">
+<div class="project-header">
+<h3><a href="https://pypi.org/project/ash-encrypt/" target="_blank" class="project-link">🔐 ash-encrypt</a></h3>
+<span class="project-tag">Open Source</span>
+<span class="project-status live">● PyPI</span>
+</div>
+<p class="project-desc">Encryption/Decryption Python Package + Web App + Go CLI</p>
+<p class="project-funny">"Published a PyPI package at version 3. Also built it in Go because one language wasn't enough chaos. Then made a whole website for it because why not."</p>
+<div class="project-tech">Python • AES • PyPI • Go • <a href="https://encrypt-o.ir/" target="_blank" style="color:#00ff88">encrypt-o.ir</a> • <a href="https://github.com/shimafallah/ash-file-encryptor" target="_blank" style="color:#00ff88">Go version</a></div>
+<ul><li>pip install ash-encrypt — yes, that's MY package on PyPI 📦</li><li>AES encryption made simple enough for humans</li><li>Built the same thing in Go just to flex 🦫</li><li>Created <a href="https://encrypt-o.ir/" target="_blank" style="color:#00ffcc">encrypt-o.ir</a> — a web UI for encryption/decryption</li></ul>
+<span class="project-period">Jan 2022 - Feb 2022</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-number">08</div>
+<div class="project-body">
+<div class="project-header">
+<h3><a href="https://github.com/abolix/MasterDnsWeb" target="_blank" class="project-link">🌐 MasterDnsWeb</a></h3>
+<span class="project-tag">Open Source</span>
+<span class="project-status live">● GitHub</span>
+</div>
+<p class="project-desc">VPN & DNS Management Platform for Iran</p>
+<p class="project-funny">"When your country blocks the internet, you build the backend to unblock it. Digital freedom engineer. 🕊️"</p>
+<div class="project-tech">Python • Django • DNS • Backend</div>
+<ul><li>Backend for VPN/DNS management system</li><li>Helping people access the free internet</li><li>Open source because freedom should be free</li></ul>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section class="section">
+<h2 class="section-title">🎓 Education (Plot Twist Department)</h2>
+<div class="edu-card">
+<div class="edu-icon">🍕➡️💻</div>
+<h3>B.Sc. Food Science and Engineering</h3>
+<p>Khazar Institute of Higher Education | 2014-2018</p>
+<p class="edu-funny">"Yes, I have a degree in food science. No, I can't fix your sourdough starter.<br>But I CAN fix your database schema, which is arguably more useful."</p>
+<p class="edu-note">Plot twist: Engineering math + problem-solving skills transfer PERFECTLY to software development. Who knew? (I knew.)</p>
+</div>
+<div class="edu-card future">
+<div class="edu-icon">🎯</div>
+<h3>M.Sc. Computer Science / Data Science</h3>
+<p>Coming Soon™ | The Future</p>
+<p class="edu-funny">"Currently seeking a Master's program brave enough to accept a food-scientist-turned-top-10-python-creator. Applications open. Scholarships welcome. 😏"</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-content">
+<p class="footer-quote">"In chess, you think 10 moves ahead.<br>In Django, you think 10 migrations ahead.<br>Same energy." ♟️🐍</p>
+<div class="footer-links">
+<a href="https://github.com/shimafallah" target="_blank">🐙 GitHub</a>
+<a href="https://www.linkedin.com/in/shimafallah" target="_blank">💼 LinkedIn</a>
+<a href="https://medium.com/@shimafallah" target="_blank">✍️ Medium</a>
+<a href="mailto:fshima02@gmail.com">📧 Email</a>
+<a href="https://t.me/shimaaa111" target="_blank">✈️ Telegram</a>
+</div>
+<p class="footer-small">Made with 🐍 Python energy, ♟️ strategic thinking, and 🍕 leftover food science knowledge<br>
+<span class="easter-egg" onclick="alert('🎉 You found the easter egg! Fun fact: Shima once debugged a production issue while playing a chess tournament. Multitasking queen. 👑')">© 2025 Shima Fallah - Click me for a secret</span></p>
+</div>
+</footer>
+
+<style>
+/* SECTIONS */
+.section{padding:4rem 2rem;max-width:1100px;margin:0 auto}
+.dark-section{background:#0f0f1a;max-width:100%;padding:4rem calc((100% - 1100px)/2 + 2rem)}
+.section-title{font-family:'Press Start 2P',monospace;font-size:clamp(.9rem,2.5vw,1.4rem);color:#00ff88;text-align:center;margin-bottom:1rem}
+.section-subtitle{text-align:center;color:#666;font-style:italic;margin-bottom:3rem;font-size:1rem}
+.inline-link{color:#00ff88;text-decoration:underline;transition:color .3s}
+.inline-link:hover{color:#00ffcc}
+
+/* ORIGIN STORY */
+.origin-story{max-width:700px;margin:0 auto}
+.origin-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem;padding:1rem;border-left:3px solid #00ff88;background:#111;border-radius:0 8px 8px 0;transition:transform .3s}
+.origin-item:hover{transform:translateX(10px)}
+.origin-emoji{font-size:2rem;min-width:40px}
+.origin-item p{line-height:1.6}
+.origin-item strong{color:#00ff88}
+
+/* EXPERIENCE */
+.exp-grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.exp-card{background:#1a1a2e;border:1px solid #222;border-radius:12px;padding:1.5rem;transition:all .3s;position:relative;overflow:hidden}
+.exp-card:hover{border-color:#00ff88;transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,255,136,.1)}
+.exp-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,#00ff88,#00ffff)}
+.exp-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.5rem}
+.exp-role{font-weight:700;color:#00ff88;font-size:1rem}
+.exp-date{color:#666;font-size:.8rem;font-family:monospace}
+.exp-company{color:#888;font-size:.9rem;margin-bottom:1rem}
+.company-link{color:#888;text-decoration:none;border-bottom:1px dashed #555;transition:all .3s}
+.company-link:hover{color:#00ff88;border-color:#00ff88}
+.exp-list{list-style:none;padding:0}
+.exp-list li{padding:.3rem 0;padding-left:1.2rem;position:relative;font-size:.9rem;color:#ccc}
+.exp-list li::before{content:'>';position:absolute;left:0;color:#00ff88;font-family:monospace}
+</style>
+
+<style>
+/* SKILLS */
+.skills-container{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.skill-category{background:#1a1a2e;border-radius:12px;padding:1.5rem;border:1px solid #222;transition:all .3s}
+.skill-category:hover{border-color:#333}
+.skill-category h3{margin-bottom:1rem;font-size:1rem}
+.skill-bars{display:flex;flex-direction:column;gap:1rem}
+.skill-item{display:flex;flex-direction:column;gap:.3rem}
+.skill-item>span:first-child{font-weight:600;font-size:.9rem}
+.bar{height:8px;background:#222;border-radius:4px;overflow:hidden}
+.fill{height:100%;background:linear-gradient(90deg,#00ff88,#00ffcc);border-radius:4px;transition:width 1.5s ease}
+.skill-note{font-size:.75rem;color:#666;font-style:italic}
+
+/* PROJECTS - NEW LAYOUT */
+.projects-showcase{display:flex;flex-direction:column;gap:1.5rem}
+.project-card{background:#1a1a2e;border:1px solid #222;border-radius:12px;padding:1.5rem;transition:all .3s;display:flex;gap:1.5rem;align-items:flex-start}
+.project-card:hover{border-color:#ff0080;transform:translateX(5px);box-shadow:0 5px 25px rgba(255,0,128,.1)}
+.project-card.featured{border-color:#333;background:linear-gradient(135deg,#1a1a2e 0%,#1a1028 100%)}
+.project-card.featured:hover{border-color:#00ff88;box-shadow:0 5px 25px rgba(0,255,136,.15)}
+.project-number{font-family:'Press Start 2P',monospace;font-size:1.5rem;color:#333;min-width:50px;padding-top:.3rem}
+.project-body{flex:1}
+.project-header{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;margin-bottom:.5rem}
+.project-header h3{font-size:1.1rem}
+.project-link{color:#e0e0e0;text-decoration:none;transition:color .3s}
+.project-link:hover{color:#00ff88}
+.project-tag{background:#ff0080;color:#fff;padding:.2rem .6rem;border-radius:12px;font-size:.7rem;font-weight:600}
+.project-status{font-size:.7rem;font-weight:600}
+.project-status.live{color:#00ff88}
+.project-desc{color:#aaa;font-size:.9rem;margin-bottom:.5rem}
+.project-funny{font-style:italic;color:#666;font-size:.85rem;margin-bottom:.8rem;border-left:2px solid #ff0080;padding-left:.8rem}
+.project-tech{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.8rem;font-size:.75rem;color:#00ffcc}
+.project-card ul{list-style:none;padding:0}
+.project-card li{padding:.2rem 0;padding-left:1rem;position:relative;font-size:.85rem;color:#bbb}
+.project-card li::before{content:'⚡';position:absolute;left:0;font-size:.7rem}
+.project-period{font-size:.75rem;color:#555;font-family:monospace;margin-top:.5rem;display:inline-block}
+
+/* EDUCATION */
+.edu-card{background:#1a1a2e;border:1px solid #222;border-radius:12px;padding:2rem;margin-bottom:1.5rem;text-align:center;transition:all .3s}
+.edu-card:hover{border-color:#00ff88;transform:scale(1.02)}
+.edu-card.future{border-style:dashed;border-color:#ff0080;opacity:.85}
+.edu-icon{font-size:3rem;margin-bottom:1rem}
+.edu-card h3{color:#00ff88;margin-bottom:.5rem}
+.edu-funny{margin-top:1rem;font-style:italic;color:#888;font-size:.95rem}
+.edu-note{margin-top:.8rem;color:#666;font-size:.85rem}
+
+/* FOOTER */
+.footer{background:#050510;padding:3rem 2rem;text-align:center;border-top:1px solid #1a1a2e}
+.footer-quote{font-style:italic;color:#555;margin-bottom:1.5rem;font-size:.95rem}
+.footer-links{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;margin-bottom:1.5rem}
+.footer-links a{color:#00ff88;text-decoration:none;font-weight:600;transition:color .3s}
+.footer-links a:hover{color:#00ffcc}
+.footer-small{color:#444;font-size:.8rem}
+.easter-egg{cursor:pointer;transition:color .3s}
+.easter-egg:hover{color:#ff0080}
+
+/* SOCIAL LINKS HERO */
+.social-links{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+.social-link{display:inline-flex;align-items:center;gap:.4rem;background:#1a1a2e;border:1px solid #333;padding:.4rem .9rem;border-radius:20px;color:#ccc;text-decoration:none;font-size:.85rem;transition:all .3s}
+.social-link:hover{border-color:#00ff88;color:#00ff88;transform:translateY(-2px);box-shadow:0 4px 15px rgba(0,255,136,.15)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.exp-header{flex-direction:column}
+.project-header{flex-direction:column;align-items:flex-start;gap:.3rem}
+.contact-bar{flex-direction:column;gap:.5rem}
+.project-card{flex-direction:column}
+.project-number{font-size:1rem}
+.social-links{flex-direction:column;align-items:center}
+}
+</style>
+
+<script>
+// Matrix rain background
+const canvas = document.getElementById('matrix');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+const chars = 'PYTHON DJANGO CELERY DOCKER CHESS FOOD GO AES 🐍♟️🍕🔐01';
+const fontSize = 14;
+const columns = canvas.width / fontSize;
+const drops = Array(Math.floor(columns)).fill(1);
+
+function drawMatrix() {
+    ctx.fillStyle = 'rgba(10,10,10,0.05)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#00ff88';
+    ctx.font = fontSize + 'px monospace';
+    for (let i = 0; i < drops.length; i++) {
+        const text = chars[Math.floor(Math.random() * chars.length)];
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+        drops[i]++;
+    }
+}
+setInterval(drawMatrix, 50);
+window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+
+// Smooth full-page section scrolling
+const sections = document.querySelectorAll('header.hero, .section, .dark-section, footer.footer');
+let isScrolling = false;
+
+function getCurrentSection() {
+    let closest = 0;
+    let closestDist = Infinity;
+    sections.forEach((sec, i) => {
+        const dist = Math.abs(sec.getBoundingClientRect().top);
+        if (dist < closestDist) { closestDist = dist; closest = i; }
+    });
+    return closest;
+}
+
+function scrollToSection(index) {
+    if (index < 0 || index >= sections.length || isScrolling) return;
+    isScrolling = true;
+    sections[index].scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => { isScrolling = false; }, 800);
+}
+
+// Mouse wheel
+let wheelTimer;
+document.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    clearTimeout(wheelTimer);
+    wheelTimer = setTimeout(() => {
+        const cur = getCurrentSection();
+        scrollToSection(e.deltaY > 0 ? cur + 1 : cur - 1);
+    }, 80);
+}, { passive: false });
+
+// Touch swipe
+let touchStartY = 0;
+document.addEventListener('touchstart', (e) => { touchStartY = e.touches[0].clientY; }, { passive: true });
+document.addEventListener('touchend', (e) => {
+    const diff = touchStartY - e.changedTouches[0].clientY;
+    if (Math.abs(diff) > 50) {
+        const cur = getCurrentSection();
+        scrollToSection(diff > 0 ? cur + 1 : cur - 1);
+    }
+}, { passive: true });
+
+// Animate skill bars on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.fill').forEach(bar => {
+                bar.style.width = bar.style.width;
+            });
+        }
+    });
+}, { threshold: 0.3 });
+document.querySelectorAll('.skill-category').forEach(el => observer.observe(el));
+
+// Konami code easter egg (press: Up Up Down Down Left Right Left Right B A)
+let konamiCode = [];
+const konamiSequence = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+window.addEventListener('keydown', (e) => {
+    // Ignore modifier keys and Enter
+    if (['Shift','Control','Alt','Meta','Enter','CapsLock'].includes(e.key)) return;
+    // Normalize letters to lowercase
+    const key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
+    konamiCode.push(key);
+    if (konamiCode.length > 10) konamiCode.shift();
+    if (JSON.stringify(konamiCode) === JSON.stringify(konamiSequence)) {
+        document.body.style.fontFamily = 'Comic Sans MS, cursive';
+        document.querySelectorAll('.glitch,.section-title,.subtitle,.badge,.exp-role,.skill-note').forEach(el => el.style.fontFamily = 'Comic Sans MS, cursive');
+        alert('🎮 KONAMI CODE ACTIVATED! Comic Sans mode engaged. You monster.');
+        konamiCode = [];
+    }
+});
+
+// Console messages
+console.log('%c🐍 Hey recruiter! You opened DevTools!', 'font-size:20px;color:#00ff88');
+console.log('%cFun facts about Shima:', 'font-size:14px;color:#ff0080');
+console.log('♟️ Can probably checkmate you in 15 moves');
+console.log('🍕 Knows the exact temperature to denature proteins (60°C for egg albumin, thanks for asking)');
+console.log('📦 Has a package on PyPI — pip install ash-encrypt');
+console.log('🦫 Built the same encryption tool in Go just because');
+console.log('📊 Top 10 out of 1,000,000+ Python creators globally');
+console.log('🌐 Built backend for VPN tools to help people access free internet');
+console.log('%cHire her before someone else does!', 'font-size:16px;color:#00ffcc;font-weight:bold');
+</script>
+</body>
+</html>
