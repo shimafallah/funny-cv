@@ -57,7 +57,7 @@ Or just open `index.html`. It's literally one file.
 
 ## Can I use this as a template?
 
-Sure! Fork it, change the content to yours, and make your own funny CV. Just don't claim you're a Top 10 Python Creator unless you actually are.
+Sure! Fork it, change the content to yours, and make your own funny CV. Just don't claim you're a Top 10 Python Creator unless you actually are.😏
 
 ## Contact
 
