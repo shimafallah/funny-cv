@@ -1,4 +1,4 @@
-# 🐍🍕♟️ The CV That Slaps
+# The CV That Slaps
 
 > "I went from engineering food to engineering backends. Both involve handling a lot of spaghetti."
 
@@ -6,13 +6,13 @@
 
 This is my personal CV/portfolio website. But not the boring kind. The kind that has:
 
-- 🎬 **Matrix rain** falling in the background (with words like PYTHON, DJANGO, CHESS, and FOOD)
-- ✨ **Glitch effect** on my name like I'm in a hacker movie
-- ⌨️ **Custom cursor** because why not
-- 🎮 **Full-page smooth scrolling** like a presentation
-- 🥚 **Easter eggs** hidden everywhere (try the Konami code 👀)
-- 💚 **DevTools messages** for nosy recruiters
-- 📱 **Fully responsive** — looks good on your phone too
+-  **Matrix rain** falling in the background (with words like PYTHON, DJANGO, CHESS, and FOOD)
+-  **Glitch effect** on my name like I'm in a hacker movie
+-  **Custom cursor** because why not
+-  **Full-page smooth scrolling** like a presentation
+-  **Easter eggs** hidden everywhere (try the Konami code 👀)
+-  **DevTools messages** for nosy recruiters
+-  **Fully responsive** — looks good on your phone too
 
 ## About Me
 
